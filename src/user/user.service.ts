@@ -150,10 +150,10 @@ export class UserService {
   } {
     const accessToken = this.jwtService.sign(
       {
-        userId: vo.userInfo.id,
-        username: vo.userInfo.username,
-        roles: vo.userInfo.roles,
-        permissions: vo.userInfo.permissions,
+        userId: vo.id,
+        username: vo.username,
+        roles: vo.roles,
+        permissions: vo.permissions,
       },
       {
         expiresIn:
@@ -163,7 +163,7 @@ export class UserService {
 
     const refreshToken = this.jwtService.sign(
       {
-        userId: vo.userInfo.id,
+        userId: vo.id,
       },
       {
         expiresIn:

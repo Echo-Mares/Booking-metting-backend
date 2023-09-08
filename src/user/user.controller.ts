@@ -58,7 +58,9 @@ export class UserController {
   @Post('login')
   async userLogin(@Body() loginUser: LoginUserDto) {
     const vo = await this.userService.login(loginUser, false);
-    const { accessToken, refreshToken } = this.userService.generateToken(vo);
+    const { accessToken, refreshToken } = this.userService.generateToken(
+      vo.userInfo,
+    );
 
     vo.accessToken = accessToken;
 
@@ -69,7 +71,9 @@ export class UserController {
   @Post('admin/login')
   async adminLogin(@Body() loginUser: LoginUserDto) {
     const vo = await this.userService.login(loginUser, false);
-    const { accessToken, refreshToken } = this.userService.generateToken(vo);
+    const { accessToken, refreshToken } = this.userService.generateToken(
+      vo.userInfo,
+    );
 
     vo.accessToken = accessToken;
 
