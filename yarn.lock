@@ -695,7 +695,7 @@
     "webpack" "5.82.1"
     "webpack-node-externals" "3.0.0"
 
-"@nestjs/common@^8.0.0 || ^9.0.0 || ^10.0.0", "@nestjs/common@^9.0.0":
+"@nestjs/common@^8.0.0 || ^9.0.0 || ^10.0.0", "@nestjs/common@^9.0.0", "@nestjs/common@^9.0.0 || ^10.0.0":
   "integrity" "sha512-Gd6D4IaYj01o14Bwv81ukidn4w3bPHCblMUq+SmUmWLyosK+XQmInCS09SbDDZyL8jy86PngtBLTdhJ2bXSUig=="
   "resolved" "https://registry.npmmirror.com/@nestjs/common/-/common-9.4.3.tgz"
   "version" "9.4.3"
@@ -714,7 +714,7 @@
     "lodash" "4.17.21"
     "uuid" "9.0.0"
 
-"@nestjs/core@^8.0.0 || ^9.0.0 || ^10.0.0", "@nestjs/core@^9.0.0":
+"@nestjs/core@^8.0.0 || ^9.0.0 || ^10.0.0", "@nestjs/core@^9.0.0", "@nestjs/core@^9.0.0 || ^10.0.0":
   "integrity" "sha512-Qi63+wi55Jh4sDyaj5Hhx2jOpKqT386aeo+VOKsxnd+Ql9VvkO/FjmuwBGUyzkJt29ENYc+P0Sx/k5LtstNpPQ=="
   "resolved" "https://registry.npmmirror.com/@nestjs/core/-/core-9.4.3.tgz"
   "version" "9.4.3"
@@ -734,7 +734,7 @@
     "@types/jsonwebtoken" "9.0.2"
     "jsonwebtoken" "9.0.0"
 
-"@nestjs/mapped-types@*":
+"@nestjs/mapped-types@*", "@nestjs/mapped-types@2.0.2":
   "integrity" "sha512-V0izw6tWs6fTp9+KiiPUbGHWALy563Frn8X6Bm87ANLRuE46iuBMD5acKBDP5lKL/75QFvrzSJT7HkCbB0jTpg=="
   "resolved" "https://registry.npmmirror.com/@nestjs/mapped-types/-/mapped-types-2.0.2.tgz"
   "version" "2.0.2"
@@ -759,6 +759,17 @@
     "@angular-devkit/schematics" "16.0.1"
     "jsonc-parser" "3.2.0"
     "pluralize" "8.0.0"
+
+"@nestjs/swagger@^7.1.11":
+  "integrity" "sha512-EneFcucWC4a0n/FVd1Hg1MRugt65vL/1RDsQMqhMRfVw6IbYWuiKh51TNI4QwOPrRGiR1ry8qHJCBcTX9cl89Q=="
+  "resolved" "https://registry.npmmirror.com/@nestjs/swagger/-/swagger-7.1.11.tgz"
+  "version" "7.1.11"
+  dependencies:
+    "@nestjs/mapped-types" "2.0.2"
+    "js-yaml" "4.1.0"
+    "lodash" "4.17.21"
+    "path-to-regexp" "3.2.0"
+    "swagger-ui-dist" "5.6.2"
 
 "@nestjs/testing@^9.0.0":
   "integrity" "sha512-LDT8Ai2eKnTzvnPaJwWOK03qTaFap5uHHsJCv6dL0uKWk6hyF9jms8DjyVaGsaujCaXDG8izl1mDEER0OmxaZA=="
@@ -3440,7 +3451,7 @@
     "argparse" "^1.0.7"
     "esprima" "^4.0.0"
 
-"js-yaml@^4.1.0":
+"js-yaml@^4.1.0", "js-yaml@4.1.0":
   "integrity" "sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA=="
   "resolved" "https://registry.npmmirror.com/js-yaml/-/js-yaml-4.1.0.tgz"
   "version" "4.1.0"
@@ -4688,6 +4699,11 @@
   "integrity" "sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w=="
   "resolved" "https://registry.npmmirror.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   "version" "1.0.0"
+
+"swagger-ui-dist@5.6.2":
+  "integrity" "sha512-2LKVuU2m6RHkemJloKiKJOTpN2RPmbsiad0OfSdtmFHOXJKAgYRZMwJcpT96RX6E9HUB5RkVOFC6vWqVjRgSOg=="
+  "resolved" "https://registry.npmmirror.com/swagger-ui-dist/-/swagger-ui-dist-5.6.2.tgz"
+  "version" "5.6.2"
 
 "symbol-observable@4.0.0":
   "integrity" "sha512-b19dMThMV4HVFynSAM1++gBHAbk2Tc/osgLIBZMKsyqh34jb2e8Os7T6ZW/Bt3pJFdBTd2JwAnAAEQV7rSNvcQ=="
